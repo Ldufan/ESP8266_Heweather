@@ -1,0 +1,18 @@
+#######################################
+# ESP8266-和风天气库 关键字
+# ESP8266-Heweather Library Keywords
+#######################################
+
+#######################################
+# 数据类型/Datatypes (KEYWORD1)
+#######################################
+
+WeatherNow			KEYWORD1
+WeatherForecast			KEYWORD1
+AirQuality			KEYWORD1
+
+#######################################
+# 函数/Functions (KEYWORD2)
+#######################################
+ESP8266_Heweather	KEYWORD2
+
