@@ -7,7 +7,7 @@ String UserKey = "YOUR-KEY";   // 私钥 https://dev.heweather.com/docs/start/ge
 String Location = "101010100"; // 城市代码 https://github.com/heweather/LocationList,表中的 Location_ID
 String Unit = "m";             // 公制-m/英制-i
 String Lang = "zh";            // 语言 英文-en/中文-zh
-float ROUND = 0.5;             // 更新间隔<分钟>,天气预报API 1小时更新一次
+float ROUND = 0.5;             // 更新间隔<小时>,天气预报API 1小时更新一次
 
 WeatherForecast WeatherForecast;
 

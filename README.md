@@ -93,7 +93,7 @@ WeatherForecast.getUvIndex(i);      // 获取紫外线强度指数
 
 ### 获取空气质量信息
 
-开发中。。。
+基本完成，keywords暂未写，一会完善。。
 
 
 
