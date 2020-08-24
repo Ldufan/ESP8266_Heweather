@@ -27,4 +27,10 @@ getWindDir			KEYWORD2
 getWindScale		KEYWORD2
 getHumidity			KEYWORD2
 getPrecip			KEYWORD2
-
+getTempMax			KEYWORD2
+getTempMin			KEYWORD2
+getIconDay			KEYWORD2
+getTextDay			KEYWORD2
+getWindDirDay		KEYWORD2
+getwindScaleDay		KEYWORD2
+getUvIndex			KEYWORD2
