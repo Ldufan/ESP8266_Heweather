@@ -7,12 +7,24 @@
 # 数据类型/Datatypes (KEYWORD1)
 #######################################
 
-WeatherNow			KEYWORD1
+WeatherNow				KEYWORD1
 WeatherForecast			KEYWORD1
-AirQuality			KEYWORD1
+AirQuality				KEYWORD1
 
 #######################################
 # 函数/Functions (KEYWORD2)
 #######################################
 ESP8266_Heweather	KEYWORD2
+config				KEYWORD2
+get					KEYWORD2
+getServerCode		KEYWORD2
+getLastUpdate		KEYWORD2
+getTemp				KEYWORD2
+getFeelLike			KEYWORD2
+getIcon				KEYWORD2
+getWeatherText		KEYWORD2
+getWindDir			KEYWORD2
+getWindScale		KEYWORD2
+getHumidity			KEYWORD2
+getPrecip			KEYWORD2
 
