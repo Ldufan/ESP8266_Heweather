@@ -48,9 +48,8 @@
 ### 获取实时天气信息
 
   ```c++
-WeatherNow weatherNow;                            //建立weatherNow对象
+WeatherNow weatherNow;                            // 建立weatherNow对象
 weatherNow.config(UserKey, Location, Unit, Lang); // 配置请求信息
-// 函数说明
 weatherNow.getServerCode();    // 获取API状态码   
 weatherNow.getLastUpdate();    // 获取服务器更新天气信息时间
 weatherNow.getTemp();          // 获取实况温度
@@ -66,11 +65,11 @@ weatherNow.getPrecip();        // 获取实况降水量,毫米
 ### 获取天气预报信息
 
 ```c++
-WeatherForecast WeatherForecast;                       //建立WeatherForecast对象
+WeatherForecast WeatherForecast;                       // 建立WeatherForecast对象
 WeatherForecast.config(UserKey, Location, Unit, Lang); // 配置请求信息
-WeatherForecast.getServerCode();                       // 获取API状态码
-Serial.println(WeatherForecast.getLastUpdate());       // 获取服务器更新天气信息时间
-// 函数说明，以下i取值为 0,1,2，分别代表今天，明天和后天
+WeatherForecast.getServerCode();    // 获取API状态码
+WeatherForecast.getLastUpdate();    // 获取服务器更新天气信息时间
+// 以下i取值为 0,1,2，分别代表今天，明天和后天
 WeatherForecast.getTempMax(i);      // 获取最高温度
 WeatherForecast.getTempMin(i);      // 获取最低温度
 WeatherForecast.getIconDay(i);      // 获取天气图标代码
