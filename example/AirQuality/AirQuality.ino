@@ -7,7 +7,7 @@ String UserKey = "YOUR-KEY";   // 私钥 https://dev.heweather.com/docs/start/ge
 String Location = "101010100"; // 城市代码 https://github.com/heweather/LocationList,表中的 Location_ID
 String Unit = "m";             // 公制-m/英制-i
 String Lang = "zh";            // 语言 英文-en/中文-zh
-float ROUND = 0.5;             // 更新间隔<小时>实时天气API 1小时更新一次
+float ROUND = 0.5;             // 更新间隔<小时>空气质量API 1小时更新一次
 
 AirQuality AirQuality;
 
@@ -32,7 +32,7 @@ void loop(){
     Serial.print(F("Category: "));
     Serial.println(AirQuality.getCategory());   // 实时空气质量指数级别
     Serial.print(F("Primary: "));
-    Serial.println(AirQuality.getPrimary());    // 实时空气质量的主要污染物，空气质量为优时，返回值为NA
+    Serial.println(AirQuality.getPrimary());    // 实时空气质量的主要污染物，优时返回值为 NA
     Serial.println(F("========================"));
   } else {  // 更新失败
     Serial.println("Update Failed...");

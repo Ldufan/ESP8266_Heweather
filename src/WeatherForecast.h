@@ -7,7 +7,7 @@
 #include <ESP8266HTTPClient.h>
 #include <WiFiClientSecureBearSSL.h>
 
-#define DEBUG // 调试用
+// #define DEBUG // 调试用
 
 class WeatherForecast {
   public:

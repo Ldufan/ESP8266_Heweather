@@ -3,7 +3,7 @@
 WeatherNow::WeatherNow() {
 }
 
-// 配置请求信息，私钥、位置、单位
+// 配置请求信息，私钥、位置、单位、语言
 void WeatherNow::config(String userKey, String location, String unit, String lang) {
   _requserKey = userKey;
   _reqLocation = location;

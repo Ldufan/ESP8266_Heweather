@@ -23,15 +23,15 @@ void loop(){
   if(weatherNow.get()){ // 获取天气更新
     Serial.println(F("======Weahter Now Info======"));
     Serial.print("Server Response: ");
-    Serial.println(weatherNow.getServerCode()); // 获取API状态码
+    Serial.println(weatherNow.getServerCode());  // 获取API状态码
     Serial.print(F("Last Update: "));
-    Serial.println(weatherNow.getLastUpdate()); // 获取服务器更新天气信息时间
+    Serial.println(weatherNow.getLastUpdate());  // 获取服务器更新天气信息时间
     Serial.print(F("Temperature: "));
-    Serial.println(weatherNow.getTemp());       // 获取实况温度
+    Serial.println(weatherNow.getTemp());        // 获取实况温度
     Serial.print(F("FeelsLike: "));
-    Serial.println(weatherNow.getFeelLike());   // 获取实况体感温度
+    Serial.println(weatherNow.getFeelLike());    // 获取实况体感温度
     Serial.print(F("Icon: "));
-    Serial.println(weatherNow.getIcon());       // 获取当前天气图标代码
+    Serial.println(weatherNow.getIcon());        // 获取当前天气图标代码
     Serial.print(F("Weather Now: "));
     Serial.println(weatherNow.getWeatherText()); // 获取实况天气状况的文字描述
     Serial.print(F("windDir: "));

@@ -1,6 +1,6 @@
 #include <ESP8266_Heweather.h>
 
-const char* ssid     = "SSID";   // WiFi名称
+const char* ssid     = "SSID";     // WiFi名称
 const char* password = "PASSWORD"; // WiFi密码
 
 String UserKey = "YOUR-KEY";   // 私钥 https://dev.heweather.com/docs/start/get-api-key

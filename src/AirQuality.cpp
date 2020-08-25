@@ -3,7 +3,7 @@
 AirQuality::AirQuality() {
 }
 
-// 配置请求信息，私钥、位置、单位
+// 配置请求信息，私钥、位置、单位、语言
 void AirQuality::config(String userKey, String location, String unit, String lang) {
   _requserKey = userKey;
   _reqLocation = location;
