@@ -34,3 +34,6 @@ getTextDay			KEYWORD2
 getWindDirDay		KEYWORD2
 getwindScaleDay		KEYWORD2
 getUvIndex			KEYWORD2
+getAqi				KEYWORD2
+getCategory			KEYWORD2
+getPrimary			KEYWORD2
