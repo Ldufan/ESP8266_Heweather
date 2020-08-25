@@ -14,7 +14,7 @@
 
 
 
-此库用于**ESP8266(NodeMCU)**开发板通过**HTTPS协议**获取和风天气API所提供的免费天气信息。使用此库可以省去繁杂的HTTPS请求以及JSON解析部分，使用几行代码即可获取有效信息，大大简化了开发步骤。
+此库用于**ESP8266(NodeMCU)**物联网开发板通过**HTTPS协议**获取和风天气API所提供的免费天气信息。使用此库可以省去繁杂的HTTPS请求以及JSON解析部分，使用几行代码即可获取有效信息，大大简化了开发步骤。
 
 > 注：
 >
@@ -56,7 +56,7 @@
 ### 获取实时天气信息
 
   ```c++
-WeatherNow weatherNow;                            // 建立weatherNow对象
+WeatherNow weatherNow;         // 建立weatherNow对象
 weatherNow.config(UserKey, Location, Unit, Lang); // 配置请求信息
 weatherNow.getServerCode();    // 获取API状态码   
 weatherNow.getLastUpdate();    // 获取服务器更新天气信息时间
@@ -70,10 +70,12 @@ weatherNow.getHumidity();      // 获取实况相对湿度百分比数值
 weatherNow.getPrecip();        // 获取实况降水量,毫米
   ```
 
+
+
 ### 获取天气预报信息
 
 ```c++
-WeatherForecast WeatherForecast;                       // 建立WeatherForecast对象
+WeatherForecast WeatherForecast;    // 建立WeatherForecast对象
 WeatherForecast.config(UserKey, Location, Unit, Lang); // 配置请求信息
 WeatherForecast.getServerCode();    // 获取API状态码
 WeatherForecast.getLastUpdate();    // 获取服务器更新天气信息时间
@@ -93,7 +95,21 @@ WeatherForecast.getUvIndex(i);      // 获取紫外线强度指数
 
 ### 获取空气质量信息
 
-基本完成，keywords暂未写，一会完善。。
+```c++
+AirQuality AirQuality;           // 建立AirQuality对象
+AirQuality.config(UserKey, Location, Unit, Lang); // 配置请求信息
+WeatherForecast.getServerCode(); // 获取API状态码
+WeatherForecast.getLastUpdate(); // 获取服务器更新天气信息时间
+AirQuality.getServerCode();      // 获取API状态码
+AirQuality.getLastUpdate();      // 获取服务器更新天气信息时间
+AirQuality.getAqi();             // 实时空气质量指数
+AirQuality.getCategory();        // 实时空气质量指数级别
+AirQuality.getPrimary();         // 实时空气质量的主要污染物，优时返回值为NA
+```
+
+
+
+
 
 
 
