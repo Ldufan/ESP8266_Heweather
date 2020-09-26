@@ -69,7 +69,7 @@ void ConnectWiFi(){
   } else { // 成功
     Serial.println("");
     Serial.println("WiFi Connection Successful!");
-    Serial.print("IP address:    ");
+    Serial.print("IP address:   ");
     Serial.println(WiFi.localIP());
   }
 }
