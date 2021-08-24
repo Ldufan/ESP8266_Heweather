@@ -69,6 +69,9 @@ void WeatherForecast::_parseNowJson(String payload) {
 
   _response_code = doc["code"].as<String>();
   _last_update_str = doc["updateTime"].as<String>();
+  _daily_fxDate_str[0] = daily_0["fxDate"].as<String>();
+  _daily_fxDate_str[1] = daily_1["fxDate"].as<String>();
+  _daily_fxDate_str[2] = daily_2["fxDate"].as<String>();
   _daily_sunrise_str[0] = daily_0["sunrise"].as<String>();
   _daily_sunrise_str[1] = daily_1["sunrise"].as<String>();
   _daily_sunrise_str[2] = daily_2["sunrise"].as<String>();
@@ -111,6 +114,10 @@ String WeatherForecast::getLastUpdate() {
   return _last_update_str;
 }
 
+// 返回日期
+String WeatherForecast::getFxDate(int index) {
+  return _daily_fxDate_str[index];
+}
 // 返回日出时间
 String WeatherForecast::getSunRise(int index) {
   return _daily_sunrise_str[index];
